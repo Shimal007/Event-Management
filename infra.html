@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBI-KEC | University Incubator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .header {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .nav-bar {
+            background: #004aad;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            animation: slideDown 0.8s ease-out;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: inline-block;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-bar a:hover {
+            background: #002a6e;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in;
+        }
+        .carousel {
+            width: 100%;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .infra-text {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .infra-text ul {
+            list-style: none;
+            padding: 0;
+        }
+        .infra-text ul li {
+            background: #f0f0f0;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: transform 0.3s ease-in-out;
+        }
+        .infra-text ul li:hover {
+            transform: scale(1.05);
+            background: #e0e0e0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="header.jpg" alt="TBI-KEC Logo">
+    </header>
+    <nav class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#">About TBI@KEC</a>
+        <a href="#">Thrust Areas</a>
+        <a href="#">Infrastructure</a>
+        <a href="#">Facilities</a>
+        <a href="#">Activities</a>
+        <a href="#">Services</a>
+        <a href="#">Schemes</a>
+        <a href="#">Partners</a>
+        <a href="#">Incubatees</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <section class="content">
+        <h2>Infrastructure</h2>
+        <div class="carousel">
+            <img src="https://via.placeholder.com/800x400?text=Example+Image+1" alt="Example Image 1">
+            <img src="https://via.placeholder.com/800x400?text=Example+Image+2" alt="Example Image 2">
+            <img src="https://via.placeholder.com/800x400?text=Example+Image+3" alt="Example Image 3">
+        </div>
+        <div class="infra-text">
+            <p>The Technology Business Incubator at KEC provides state-of-the-art facilities, including:</p>
+            <ul>
+                <li>24x7 Facility Access</li>
+                <li>20,000 Sq.ft Built-up area in 40,000 Sq.ft Land</li>
+                <li>Modern A/C Workspace</li>
+                <li>Conference cum Training Hall</li>
+                <li>Library & Information Centre</li>
+                <li>High-Speed Data Voice Communication Systems</li>
+                <li>On-Campus Accommodation</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2500,
+                dots: true,
+                arrows: false,
+                fade: true
+            });
+        });
+    </script>
+</body>
+</html>
