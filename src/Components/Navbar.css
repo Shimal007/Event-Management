@@ -1,0 +1,86 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #0a3d62;
+    padding: 15px 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #aed6f1;
+  }
+  
+  .social-icons {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .instagram-icon:hover {
+    color: #e1306c; /* Instagram's brand color */
+  }
+  
+  .threads-icon:hover {
+    color: #000000; /* Threads' brand color */
+  }
+  
+  .linkedin-icon:hover {
+    color: #0077b5; /* LinkedIn's brand color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .nav-links {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+    
+    .nav-links {
+      justify-content: center;
+      padding: 10px 0;
+    }
+    
+    .social-icons {
+      margin-right: 0;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  }
