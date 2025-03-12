@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBI-KEC | Incubatees</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .nav-bar {
+            background: #004aad;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: inline-block;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-bar a:hover {
+            background: #002a6e;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #004aad;
+            color: white;
+        }
+        a {
+            color: #004aad;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="header.jpg" alt="TBI-KEC Logo">
+    </header>
+    <nav class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#">About TBI@KEC</a>
+        <a href="#">Thrust Areas</a>
+        <a href="#">Infrastructure</a>
+        <a href="#">Facilities</a>
+        <a href="#">Activities</a>
+        <a href="#">Services</a>
+        <a href="#">Schemes</a>
+        <a href="#">Partners</a>
+        <a href="#">Incubatees</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <section class="content">
+        <h2>Current Incubatees</h2>
+        <a href="graduated_incubatees.html">Graduated Incubatees</a>
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th>Incubatee</th>
+                <th>Domain / Sector</th>
+                <th>Website</th>
+            </tr>
+            <script>
+                let incubatees = [
+                    ["Kaar Infotech Pvt Ltd", "Software Development", "https://www.kaarinfotech.com"],
+                    ["Dynattral Tech Pvt Ltd", "Industrial Automation", "https://dynattral.in"],
+                    ["Aran Tecnovation Pvt Ltd", "Manufacturing", "https://www.arantec.app/#"],
+                    ["Nalvinai Energy Systems", "Energy Solutions", "-"],
+                    ["K.G.Automation", "Industrial Automation", "https://www.linkedin.com/in/rajaganesh-palanivelu-7b403587/"],
+                    ["Native Guru", "Edutech", "https://nativeguru.in/"],
+                    ["Lights Inc.", "Fintech", "-"],
+                    ["High Performance Engineering & Research Pvt Ltd", "Hardware / IoT", "https://hiperautomotive.com"],
+                    ["MachDatum Private Limited", "Hardware / IoT", "https://machdatum.com"],
+                    ["Chimertech Private Limited", "Veterinary Science", "https://chimertech.com"],
+                    ["Agram Agro Tech", "Agriculture", "-"],
+                    ["MN Vesthar Farm Tech", "Agriculture", "-"],
+                    ["SMT Flyash Bricks", "Manufacturing", "-"],
+                    ["Natraj Glossy Coaters", "Energy", "-"],
+                    ["Maidee Games Pvt Ltd", "Edu Tech", "https://www.madiee.com/"],
+                    ["Mr.R.Sankaranarayanan", "Energy", "https://www.linkedin.com/in/sankaranarayanan-ravichandran-7775b1273/"],
+                    ["MWS Research Centre", "Agritech", "https://www.mwsresearchcentre.com/"],
+                    ["Real Tech GPS Private Limited", "Automobile", "https://realtechgps.com"],
+                    ["Nutrigenetics Life Science Pvt. Ltd", "Agritech", "https://www.linkedin.com/in/harini-rangarajan-217098114/"],
+                    ["GSR Tech Solutions", "Textile", "-"],
+                    ["DBS Tech Solutions", "Textile", "-"],
+                    ["Vesrad Technologies", "Energy", "https://www.vesrad.in/"],
+                    ["Progen Foods Pvt Ltd", "Food Tech", "https://www.linkedin.com/in/prateeka-haldorai-86722916b/"],
+                    ["Universal Industries", "Agriculture", "http://www.universalindustriesindia.in/"],
+                    ["The Cloud Company", "IT Service Management", "https://thecloud.company/"],
+                    ["Green Collar Agritech Solutions Pvt Ltd", "Agriculture", "https://greencollaragri.com/"],
+                    ["IDot Inc.", "IT Service Management", "https://idotinc.in/"],
+                    ["Squadl Technologies Pvt Ltd", "Software Development", "https://squadl.in/"],
+                    ["Grow Your Farms", "AgriTech", "https://www.growyourfarms.com/"],
+                ];
+                document.write(incubatees.map((inc, index) => `<tr><td>${index+1}</td><td>${inc[0]}</td><td>${inc[1]}</td><td>${inc[2] !== "-" ? `<a href='${inc[2]}' target='_blank'>Website</a>` : "-"}</td></tr>`).join(""));
+            </script>
+        </table>
+    </section>
+</body>
+</html>
