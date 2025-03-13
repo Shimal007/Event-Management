@@ -186,6 +186,7 @@ body, html {
 .carousel-caption h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .carousel-caption p {
@@ -219,16 +220,89 @@ body, html {
   color: #444;
   margin-bottom: 20px;
 }
-
-/* About Section */
-/* About Section */
-.about-section {
-  background-color: #f9f9f9;
-  padding: 60px 0;
-  width: 100%;
-  text-align: center;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Increase vertical movement for more effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+.about-section {  
+  animation: fadeIn 3s ease-in-out 0.5s forwards;
+  opacity: 0; /* Start hidden */
+}
+.about-container {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 40px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  color: #004080;
+}
+
+.about-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  font-size: 22px;
+  margin: 10px 0;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-text ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #004080;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-images {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 250px;
+}
+
+.about-img {
+  width: 55%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.about-img:hover {
+   transform: scale(1.07) rotate(2deg);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.about-section h2{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: rgb(10, 61, 98);
+  text-align: center;
+}
 /* Remove width restriction */
 .about-section .section-container {
   width: 100%;
@@ -239,7 +313,7 @@ body, html {
 
 /* Footer */
 .site-footer {
-  background-color: #0a3d62;
+  background-color: rgb(10, 61, 97);
   color: white;
   padding: 40px 0 20px;
   margin-top: auto;

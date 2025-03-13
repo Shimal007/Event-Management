@@ -1,0 +1,88 @@
+.funding-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f3f3f3, #e8e8e8);
+    text-align: center;
+  }
+  
+  .section-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: slide-up 1s ease-out;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .funding-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .funding-list li {
+    margin: 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .funding-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .funding-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .funding-list a:hover {
+    color: #d32f2f;
+  }
+  
+  .pdf-icon {
+    color: #d32f2f;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .delay {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import linkedinLogo from '../assets/icons8-instagram-48.png';
-import instagramLogo from '../assets/icons8-linkedin-48.png';
-import threadsLogo from '../assets/icons8-twitter-48.png';
-
+import Footer from './Footer';
+import tbi1 from '../assets/tbi1.jpg';
+import tbi2 from '../assets/tbi2.jpg';
+import tbi3 from '../assets/tbi3.jpg';
+import FundingSchemes from './FundingSchemes';
+import FundingSupport from './FundingSupport';
 import './TBIHome.css';
 import NavBar from './NavBar';
 
@@ -133,72 +135,39 @@ const TBIHome = () => {
         </section>
         
         {/* About Section */}
-        <section id="about" className="about-section content-section">
-          <div className="section-container">
-            <h2>About TBI@KEC</h2>
-            <p>
-              Technology Business Incubator at Kongu Engineering College (TBI@KEC) is a vibrant ecosystem 
-              for budding entrepreneurs and innovators. Established with support from the Department of 
-              Science and Technology, Government of India, TBI@KEC provides a nurturing environment for 
-              technology-based startups to grow and flourish.
-            </p>
-            <p>
-              Our mission is to foster innovation, incubate promising startups, and contribute to the 
-              growth of the entrepreneurial ecosystem. We offer state-of-the-art infrastructure, mentorship, 
-              networking opportunities, and funding support to help startups transform their ideas into 
-              successful businesses.
-            </p>
-          </div>
-        </section>
-        
+        <section id="about" className="about-section">
+      <h2>Objectives of TBI@KEC</h2>
+  <div className="about-container">
+    {/* Left Side - Text Content */}
+    <div className="about-text">
+      <ul>
+        <li><strong>Our MAJOR OBJECTIVE</strong> is to nurture the start-ups in emerging technology areas and provide assistance to SMEs.</li>
+        <li>Creation of technology-based new enterprises.</li>
+        <li>Creation of value-added jobs and services.</li>
+        <li>Developing new tools of technology transfer.</li>
+        <li>Fostering the entrepreneurial spirit.</li>
+        <li>Speedy commercialization of R&D outputs.</li>
+        <li>Creation of technological awareness in existing Small and Medium Enterprises (SMEs).</li>
+        <li>Assistance to existing SMEs by way of specialized services.</li>
+      </ul>
+    </div>
+
+    {/* Right Side - Images */}
+    <div className="about-images">
+    <img src={tbi1} alt="Presentation at TBI" className="about-img"/>
+<img src={tbi2} alt="Audience at TBI Event" className="about-img"/>
+<img src={tbi3} alt="Product Launch at TBI" className="about-img"/>
+
+    </div>
+  </div>
+</section>
+<FundingSchemes/>
+<FundingSupport/>
         {/* Add more sections as needed */}
       </main>
       
       {/* Footer */}
-      <footer className="site-footer">
-  <div className="footer-content">
-    {/* Footer Info */}
-    <div className="footer-info">
-      <h3>TBI@KEC</h3>
-      <p>Perundurai, Erode - 638 060</p>
-      <p>Email: tbi@kongu.ac.in</p>
-      <p>Phone: +91 4294 226600</p>
-    </div>
-
-    {/* Quick Links */}
-    <div className="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#apply">Apply for Incubation</a></li>
-        <li><a href="#contact">Services</a></li>
-      </ul>
-    </div>
-
-    {/* Social Media Links */}
-    <div className="footer-contact">
-      <h3>Contact Us</h3>
-      <div className="footer-social-icons">
-        <a href="#linkedin" className="social-icon">
-          <img src={linkedinLogo} alt="LinkedIn" />
-        </a>
-        <a href="#instagram" className="social-icon">
-          <img src={instagramLogo} alt="Instagram" />
-        </a>
-        <a href="#threads" className="social-icon">
-          <img src={threadsLogo} alt="Threads" />
-        </a>
-      </div>
-    </div>
-  </div>
-
-  {/* Footer Bottom */}
-  <div className="footer-bottom">
-    <p>&copy; {new Date().getFullYear()} TBI@KEC. All Rights Reserved.</p>
-  </div>
-</footer>
-
+      <Footer/>
     </div>
   );
 };
