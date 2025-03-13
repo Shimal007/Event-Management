@@ -1,13 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBI-KEC - Technology Business Incubator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">TBI-KEC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Thrust.html">Thrust Areas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="infrastructure.html">InFrastructure</a></li>
+                <li><a href="D:\Tbi_Html\Main\TBI_KEC_Equipment_List.pdf">Facilities</a></li>
+                <li><a href="D:\Tbi_Html\Main\products.pdf">Products</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/kongutbi/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/company/kongutbi" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/KonguTBI?t=fNCHZsSH_o4YTue-Z-M0Cg&s=09" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rest of your HTML remains unchanged -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Technology Business Incubator</h1>
+            <p class="animate-text-delay">Empowering Innovation at Kongu Engineering College</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="stats-container">
+            <div class="stat-card" data-aos="fade-up">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Startups Incubated</div>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Entrepreneurs Trained</div>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-number" data-target="20">0</div>
+                <div class="stat-label">Expert Mentors</div>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-label">Success Stories</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Incubation Support</h3>
+                <p>Complete infrastructure and mentoring support for startups</p>
+            </div>
+            <div class="service-card">
+                <h3>Funding Access</h3>
+                <p>Connect with investors and funding opportunities</p>
+            </div>
+            <div class="service-card">
+                <h3>Mentorship</h3>
+                <p>Guidance from industry experts and successful entrepreneurs</p>
+            </div>
+            <div class="service-card">
+                <h3>Networking</h3>
+                <p>Access to vast network of industry connections</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Kongu Engineering College<br>Perundurai, Erode<br>Tamil Nadu, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TBI-KEC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
